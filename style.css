@@ -4,70 +4,109 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kaushan+Script&family=Parisienne&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 :root{
 
     --fonte-padrão: "Work Sans", sans-serif;
     --fonte-destaque: "Kaushan Script", sans-serif;
 }
+header {
+    background-image: linear-gradient(to top, rgb(248, 161, 176), rgb(247, 236, 140));
+    padding: 10px;
+    margin: -10px -10px 0px -10px
+}
+header > h1 {
+    font-family: var(--fonte-destaque);
+    text-align: center;
+}
+header > h2 {
+    text-align: center;
+}
+header > h3 {
+    text-align: center;
+}
+
+nav {
+    background-color: pink;
+    padding: 10px;
+
+}
+
+nav > a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+a:hover {
+    background-color: rgba(247, 43, 185, 0.397);
+    text-decoration: underline;
+    text-decoration: none;
+    border-radius: 5px;
+    
+
+
+}
+
+
 
 body {
     background-color: white;
-    font-family: var(--fonte-padrão)
-}
-
-header { background-color:  rgba(248, 129, 199, 0.849);
-   background-image: url(imagens/capa-pequena.png);
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   margin: auto;
     font-family: var(--fonte-padrão);
-    padding: 150px;
-
-
-
-}
-img {
-    background-color: wheat;
-    padding: 20px;
-    text-align: center;
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-}
-
-ul {
-    font-size: 1em;
-    list-style-type: '\2714\00A0\00A0';
-}
-
- h1 {
-    font-family: var(--fonte-destaque);
-    font-size: 3em;
-    
-    
-}
- p {
-    text-indent: 25px;
-}
-
-.position {
-    border: 50px;
-    display: inline;
-}
-.grande {
-    font-size: 2em;
-}
-main {
-    background-color: rgba(248, 129, 199, 0.849);
-    padding: 50px;
+    margin: auto;
+    background-image: url(imagens/capa-pequena.png);
     background-position: center;
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-image: url(imagens/wallpaper006.jpg)
+}
+
+main {
+
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+   border-radius: 10px black;
+   min-width: 300px;
+   max-width: 800px;
+   padding: 20px;
+   margin: auto;
     
 }
-nav {
-    background-color: rgba(253, 215, 165, 0.856);
+
+article > h1 {
+    padding: 15px;
+   font-size: 2em;
+}
+article > h2 {
+    padding: 10px;
+    background-color: rgba(255, 192, 203, 0.514);
+    border-radius: 5px;
+
+}
+article > h2:hover {
+    background-color: rgba(247, 49, 181, 0.719);
+}
+#q1 {
+  
+
+
+}
+
+footer {
+    background-color:  pink;
+    
+}
+
+footer > p {
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    
 }
